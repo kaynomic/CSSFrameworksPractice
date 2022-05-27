@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap');
+
+/***** General *****/
+body{
+    font-family: 'Titillium Web', sans-serif;
+    color: #44d62c;
+    background-color: #252525;
+
+}
+
+p {
+    color: #999;
+    font-size: 12px;
+
+}
+
+/***** NAV BAR *****/
+.nav {
+
+    display: flex;
+    justify-content: space-around;
+    background-color: black ;
+    height: 40px;
+    align-items: center;
+
+}
+
+.nav-link{
+    color: #44d62c;
+    justify-content: center;
+
+}
+
+
+.razer{
+
+    width: 40px;
+    height: 40px;
+    
+}
+
+/***** Links *****/
+a {
+  color: #44d62c;
+  transition: transform 1s;
+}
+a:hover  {
+  transform: scale(1.3,1.3);
+  color: #d9ed48;
+}
+
+/***** Button Styles *****/
+.btn{
+
+    cursor: pointer;
+
+}
+
+.btn-primary{
+
+    background: transparent;
+    border: 1px solid #44d62c;
+    color: #44d62c;
+    font-weight: normal;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 15px;
+
+}
+
+.btn-primary:hover{
+
+
+}
+
+.nav-btn{
+    border-radius: 5px;
+    background-color: black;
+    transition: width 2s, height 2s, transform 1s;
+
+}
+
+.nav-btn:hover{
+
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.btn-submit{
+
+    background: transparent;
+    border: 1px solid #44d62c;
+    color: #44d62c;
+    font-weight: normal;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 10px 15px;
+
+}
+
+.btn-submit:hover, .btn-submit:hover{
+    color: #d9ed48;
+    border-color:#d9ed48;
+    
+}
+
+@keyframes spin{
+
+    from{
+        transform:rotate(0deg);
+
+    }
+    to{
+        transform:rotate(360deg);
+
+    }
+}
+/***** Forms *****/
+
+.form-control{
+    width:auto;
+    border: 1px solid #44d62c;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #252525;
+
+}
+
+.form-control:active, .form-control:hover{
+
+    border-color: #d9ed48;
+}
+
+input[type="checkbox"]:checked {
+    
+    accent-color: #44d62c;
+}
+
+
+/***** Other *****/
+.active{
+
+}
+
+.disabled{
+
+}
